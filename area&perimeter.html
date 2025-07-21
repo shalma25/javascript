@@ -1,0 +1,27 @@
+<script>
+      class Rectangle{
+        constructor(length, breadth) {
+        this.a=length
+        this.b=breadth
+}
+area(){
+ return this.a * this.b
+}
+
+perimeter(){
+   return (this.a + this.b)*2
+
+}
+}
+
+num1=Number(prompt("Enter the length"));
+num2=Number(prompt("Enter the breadth"));
+
+obj=new Rectangle(num1, num2)
+
+
+document.write("area="+obj.area()+"</br>");
+document.write("perimeter="+obj.perimeter());
+
+
+</script>

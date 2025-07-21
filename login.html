@@ -1,0 +1,26 @@
+<script>
+  function login(username, password) {
+    
+     users = [
+      { username: 'shalu', password: '1234' },
+      { username: 'steffi', password: 'abcd' },
+      { username: 'shalz', password: '123' }
+    ];
+
+    
+    for (var i = 0; i < users.length; i++) {
+      if (users[i].username === username && users[i].password === password) 
+        return "Login successful";
+      
+    }
+
+    return "Login failed";
+  }
+
+  
+   uname = prompt("Enter your username:");
+   pword = prompt("Enter your password:");
+
+  
+  alert(login(uname, pword));
+</script>

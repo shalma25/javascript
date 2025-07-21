@@ -1,0 +1,32 @@
+<script>
+class Members{
+     constructor(){
+     this.users = [
+      { username: 'shalu', password: '1234' },
+      { username: 'steffi', password: 'abcd' },
+      { username: 'shalz', password: '123' }
+    ];
+}
+    login(username, password){
+    for (var i = 0; i < this.users.length; i++) 
+{
+      if (this.users[i].username === username && this.users[i].password === password) {
+        return "Login successful";
+      }
+    }
+
+    return"Login failed";
+  }
+
+  }
+ 
+
+ a = prompt("Enter your username:");
+ b = prompt("Enter your password:");
+
+
+
+obj=new Members();
+alert(obj.login(a, b))
+
+</script>

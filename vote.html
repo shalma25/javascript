@@ -1,0 +1,23 @@
+<script>
+class Citizen {
+constructor(name, age){
+  this.a=name;
+  this.b=age;
+} 
+
+age() {
+   if(this.b>=18){
+    document.write(this.a+ " is eligible to vote")
+} else{
+    document.write(this.a+ " is not eligible to vote")
+}
+}
+}
+num1=(prompt("Enter the name"))
+num2=Number(prompt("Enter the age"))
+
+
+obj=new Citizen(num1, num2)
+obj.age()
+
+</script>

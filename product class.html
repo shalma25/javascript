@@ -1,0 +1,19 @@
+<script>
+    class Product {
+    constructor(name,price){
+    this.a=name;
+    this.b=price;
+} 
+
+print(){
+   document.write("Product name: " + this.a + "</br>")
+   document.write("Product price: " + this.b)
+}
+}
+num1=prompt("Enter the product name")
+num2=Number(prompt("Enter the price"))
+
+obj=new Product(num1, num2)
+obj.print()
+
+</script>
